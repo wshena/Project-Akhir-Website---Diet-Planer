@@ -1,0 +1,35 @@
+div.container{
+    display: flex;
+    flex-direction: row;
+    height: 1024px;
+}
+.left {
+    background-color: cyan;
+    width: 300px;
+    padding: 10px 5px;
+}
+.right{
+    background-color: greenyellow;
+    width: 300px;
+    padding: 10px 5px;
+}
+.center{
+    width: 840px;
+    padding: 10px 5px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+nav {
+    align-items: center;
+    background-color: aliceblue;
+}
+ul {
+    list-style: none;
+}
+.logo {
+    margin: 15px 15px 30px 15px;
+}
