@@ -1,0 +1,33 @@
+*,*::after,*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html, body {
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+// View
+.hide-for-mobile {
+	@include breakpoints-down(medium) {
+		display: none;
+	}
+}
+.hide-for-desktop {
+	@include breakpoints-up(medium) {
+		display: none;
+	}
+}
+
+.container {
+	// mobile 
+	padding-right: 20px;
+	padding-left: 20px;
+
+	// Desktop
+	@include breakpoints-up(medium) {
+		padding-right: 100px;
+		padding-left: 100px;
+	}
+}
