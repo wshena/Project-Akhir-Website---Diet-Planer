@@ -3,6 +3,7 @@
 	if (isset($_POST['sign-in'])) {
 		if (registrasi($_POST) > 0) {
 			echo "<script> alert('Berhasil sign in')</script>";
+            header("Location: index.php");
 		} else {
 			echo mysqli_error($conn);
 		}
@@ -33,7 +34,7 @@
                 </div>
                 <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="off">
 								<input type="password" name="password" id="password" placeholder="Password" autocomplete="off">
-                <input type="button"  name="sign-in" value="SIGN-IN" class="btn-blue">
+                <input type="submit"  name="sign-in" value="SIGN-IN" class="btn-blue">
 
                 <div class="links">
                     <p>or sign up with</p>
