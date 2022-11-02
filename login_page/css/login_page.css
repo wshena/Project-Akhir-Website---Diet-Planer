@@ -1,0 +1,40 @@
+*, *::after, *::before { padding: 0; margin: 0; box-sizing: inherit; }
+
+html, body { box-sizing: border-box; font-size: 18px; }
+
+@media (max-width: 640px) { .hide-for-mobile { display: none; } }
+
+@media (min-width: 640px) { .hide-for-desktop { display: none; } }
+
+.container { padding-right: 20px; padding-left: 20px; }
+
+@media (min-width: 640px) { .container { padding-right: 100px; padding-left: 100px; } }
+
+main { display: flex; flex-direction: column; }
+
+main .container { padding: 0; }
+
+main .main-img { position: absolute; top: 0; width: 100%; height: 500px; z-index: -1; background-image: url("../images/ketogenic-low-carbs-diet2 1.png"); background-position: center; background-size: cover; }
+
+main .form-container { width: 70vw; height: 600px; background-color: #fff; color: #fff; margin: 0 auto; margin-top: 300px; margin-bottom: 50px; padding: 80px 70px; text-align: center; border: none; border-radius: 30px; box-shadow: 0 4px 15px 1px #000; }
+
+main .form-container h1 { color: black; margin-bottom: 30px; font-weight: bold; }
+
+main .form-container form { width: 600px; margin: 0 auto; }
+
+main .form-container form input { width: 100%; padding: 5px; border-radius: 3px; margin-bottom: 20px; }
+
+main .form-container form .btn-blue { background-color: #3B71CA; color: #fff; padding: 10px 0; }
+
+main .form-container form .btn-blue:hover { cursor: pointer; }
+
+main .form-container form h3 { color: black; font-weight: bold; }
+
+main .form-container form h3 span { color: grey; }
+
+main .form-container form .line { display: flex; justify-content: space-between; align-items: center; margin: 20px 0; }
+
+main .form-container form .line span { display: block; height: 1px; width: 40%; background-color: #000; }
+
+main .form-container form .line p { color: #000; }
+/*# sourceMappingURL=login_page.css.map */

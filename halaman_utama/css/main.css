@@ -1,0 +1,88 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px; }
+
+@media (max-width: 640px) {
+  .hide-for-mobile {
+    display: none; } }
+
+@media (min-width: 640px) {
+  .hide-for-desktop {
+    display: none; } }
+
+.container {
+  padding-right: 20px;
+  padding-left: 20px; }
+  @media (min-width: 640px) {
+    .container {
+      padding-right: 100px;
+      padding-left: 100px; } }
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  main .container {
+    padding: 0; }
+  main .main-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    background-image: url("../images/ketogenic-low-carbs-diet2 1.png");
+    background-position: center;
+    background-size: cover; }
+  main .main-txt {
+    width: 70vw;
+    height: 600px;
+    background-color: #FF881B;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 300px;
+    margin-bottom: 50px;
+    padding: 80px 70px;
+    text-align: center;
+    border: none;
+    border-radius: 30px; }
+    main .main-txt .title {
+      font-size: 50px;
+      margin-bottom: 20px; }
+    main .main-txt .line {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      main .main-txt .line span {
+        display: block;
+        width: 350px;
+        height: 4px;
+        background-color: #fff; }
+    main .main-txt p {
+      font-size: 32px;
+      margin: 50px 0; }
+    main .main-txt .btn {
+      padding: 26px 85px;
+      font-size: 32px;
+      background-color: #f5f5f5;
+      color: black;
+      border: none; }
+      main .main-txt .btn:hover {
+        cursor: pointer; }
+/*# sourceMappingURL=main.css.map */
