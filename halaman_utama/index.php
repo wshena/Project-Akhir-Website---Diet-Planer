@@ -23,7 +23,7 @@
 
 			<p>Jalani diet dengan mudah bersama kami. Dan kami akan membantu anda untuk melakukan diet dengan memberikan rekomendasi makanan dari program diet yang kami tawarkan selama proses diet berlangsung </p>
 
-			<a href="../login_page/login_page.php">
+			<a href="../pages/login_page/login_page.php">
 				<button class="btn">Gabung Gratis</button>
 			</a>
 		</div>
