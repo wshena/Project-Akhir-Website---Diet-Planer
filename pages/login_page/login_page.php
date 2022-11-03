@@ -12,23 +12,17 @@
 		// $row = mysqli_fetch_assoc($result);
 		// if(mysqli_num_rows($result) === 1) {
 		// 	// store record to row[]
-			// if (password_verify($password, $row["password"])) {
-			// 	// if password match, send to next page
-			// 	header("location : index.php");
-			// 	exit;
-			// }
+		// 	if (password_verify($password, $row["password"])) {
+		// 		// if password match, send to next page
+		// 		header("location : index.php");
+		// 		exit;
+		// 	}
 		// }
 
-		if ($result-> num_rows > 0) {
-			$row = mysqli_fetch_assoc($result);
-			if (password_verify($password, $row["password"])) {
-				// if password match, send to next page
-				header("location : index.php");
-				exit;
-			}
-			// header("Location: index.php");
-		} else {
-			echo "<script>alert('Email atau password Anda)</script>";
+		if (mysqli_num_rows($result) > 0) {
+			header("Location: index.php");
+		}else {
+			$error = true;
 		}
 
 		// $error = true;
@@ -52,9 +46,9 @@
 			<div class="main-img"></div>
 
 			<!-- display error massage -->
-			<!-- <?php if(isset($error)) : ?>
+			<?php if(isset($error)) : ?>
 				<p style="color: red; font-style: italic">Email atau Password anda salah!</p>
-			<?php endif; ?> -->
+			<?php endif; ?>
 
 			<div class="form-container">
 				<h1>LOG IN</h1>

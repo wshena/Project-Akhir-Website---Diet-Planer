@@ -3,7 +3,7 @@
 	if (isset($_POST['sign-in'])) {
 		if (registrasi($_POST) > 0) {
 			echo "<script> alert('Berhasil sign in')</script>";
-            header("Location: index.php");
+            header("Location: ../login_page/login_page.php");
 		} else {
 			echo mysqli_error($conn);
 		}
