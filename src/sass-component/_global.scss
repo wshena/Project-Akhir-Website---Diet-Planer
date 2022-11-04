@@ -1,0 +1,68 @@
+*, *::after, *::before {
+  padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+html, body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: $fontFamily;
+	font-size: 18px;
+	position: relative;
+	overflow-x: hidden;
+	height: 100vh;
+}
+
+// container
+.container {
+	// mobile 
+	@include breakpoint-down(medium) {
+		padding: 20px;
+	}
+
+	// desktop	
+	@include breakpoint-up(medium) {
+		padding: 30px 100px;
+	}
+}
+
+// responsive
+.hide-for-desktop {
+	@include breakpoint-up(medium) {
+		display: none !important;
+	}
+}
+.hide-for-mobile {
+	@include breakpoint-down(medium) {
+		display: none !important;
+	}
+}
+
+// components
+button, .btn {
+	padding: 15px 25px;
+	@include breakpoint-down(medium) {
+		padding: 10px 15px;
+	}
+}
+.btn-primary {
+	margin-top: 20px;
+	background-color: transparent;
+	border: 3px solid #84FFDD;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-family: $fontFamily;
+	font-weight: bold;
+	letter-spacing: 2px;
+	&:hover {
+		cursor: pointer;
+		background-color: #84FFDD;
+		color: black;
+	}
+}
+
+.title, .titleDescription {
+	text-align: center;
+	margin-bottom: 20px;
+}

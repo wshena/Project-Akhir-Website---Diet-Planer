@@ -1,0 +1,53 @@
+.program {
+  .cards {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 50px;
+
+		@include breakpoint-down(medium) {
+			flex-direction: column;
+		}
+
+		.card {
+			width: 25%;
+			height: 350px;
+			position: relative;
+			background-position: center;
+			background-size: cover;
+
+			@include breakpoint-down(medium) {
+				width: 100%;
+				margin-bottom: 50px;
+			}
+
+			&-content {
+				background-color: pink;
+				opacity: 0.8;
+				background-blend-mode:soft-light;
+				position: absolute;
+				bottom: 0;
+				padding: 20px;
+				border-top-right-radius: 50px;
+				width: 100%;
+
+				h1 {
+					font-size: 20px;
+					margin-bottom: 20px;
+				}
+				p {
+					font-size: 15px;
+					margin-bottom: 10px;
+				}
+				.btn-card {
+					font-size: 12px;
+					padding: 10px 15px;
+					&:hover {
+						cursor: pointer;
+						scale: 0.9;
+					}
+				}
+			}
+		}
+	}
+}

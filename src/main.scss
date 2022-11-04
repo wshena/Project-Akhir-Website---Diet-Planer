@@ -1,0 +1,12 @@
+@import './sass-component/mixins';
+@import './sass-component/var';
+@import './sass-component/global';
+
+// Home component
+@import './components/Navbar/Navbar';
+@import './components/homeComponents/Jumbotron/Jumbotron';
+@import './components/homeComponents/whyChooseUs/WhyUs';
+@import './components/homeComponents/Program/Program';
+@import './components/homeComponents/Carousel/Carousel';
+@import './components/homeComponents/joinUs/JoinUs';
+@import './components/Footer/Footer';

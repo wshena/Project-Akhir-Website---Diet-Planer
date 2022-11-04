@@ -1,0 +1,47 @@
+.joinUs {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include breakpoint-down(medium) {
+		flex-direction: column;
+	}
+
+	&-image {
+		width: 50%;
+		height: 400px;
+		background-position: center;
+		background-size: cover;
+		border-radius: 20px;
+		@include breakpoint-down(medium) {
+			width: 100%;
+			order: 1;
+			height: 300px;
+		}
+	}
+
+	&-text {
+		width: 45%;
+		@include breakpoint-down(medium) {
+			width: 100%;
+			order: 2;
+			margin-top: 30px;
+		}
+		h1 {
+			margin: 20px 0;
+		}
+		h3 {
+			text-transform: uppercase;
+			font-weight: normal;
+		}
+		.btn-register {
+			background-color: black;
+			color: white;
+			padding: 10px 25px;
+			border: none;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

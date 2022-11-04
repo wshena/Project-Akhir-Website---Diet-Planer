@@ -1,0 +1,78 @@
+.whyUs {
+	margin-top: 50px;
+  .cards {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 50px;
+
+		@include breakpoint-down(medium) {
+			flex-direction: column;
+		}
+		
+		.card {
+			width: 30%;
+			height: 250px;
+			display: flex;
+			position: relative;
+			overflow: hidden;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+
+			@include breakpoint-down(medium) {
+				width: 100%;
+				margin-bottom: 50px;
+			}
+
+			&:hover {
+				cursor: pointer;
+				.card-content {
+					top: 0;
+				}
+				.card-logo {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				.card-text {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+			}
+
+			&-logo {
+				padding: 20px;
+				background-color: green;
+				height: 100%;			
+			}
+
+			&-text {
+				padding: 20px;
+				height: 100%;
+				background-color: lavender;
+				
+				h1 {
+					font-size: 18px;
+					margin-bottom: 20px;
+				}
+				P {
+					font-size: 15px;
+					margin-top: 20px;
+				}
+			}
+
+			&-content {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;				
+				position: absolute;
+				height: 100%;
+				top: 190px;
+
+				transition: all 0.5s;
+			}
+		}
+	}
+}
